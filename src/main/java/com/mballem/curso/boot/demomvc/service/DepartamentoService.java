@@ -1,8 +1,8 @@
 package com.mballem.curso.boot.demomvc.service;
 
-import com.mballem.curso.boot.demomvc.domain.Departamento;
-
 import java.util.List;
+
+import com.mballem.curso.boot.demomvc.domain.Departamento;
 
 public interface DepartamentoService {
 
@@ -15,4 +15,7 @@ public interface DepartamentoService {
     Departamento buscarPorId(Long id);
 
     List<Departamento> buscarTodos();
+
+    boolean depertamentoTemCargos(Long id);
 }
+
